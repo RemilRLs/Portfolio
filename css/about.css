@@ -5,6 +5,7 @@
     background-color: #1b1e1f;
     padding-top: 1024px;
     width: 100%;
+
     
 }
 
@@ -47,4 +48,28 @@
     width: 400px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .right{
+    width: 55%;
+    color: rgb(156, 156, 156);
+    font-size: 20px;
+    padding-bottom:100px;
+    
+}
+
+.about .about-content .right p {
+    margin-top: 23px;
+}
+
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
 }
