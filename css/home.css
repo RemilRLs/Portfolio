@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	height: 100vh;
+}
+
+/* Particles that move */
+
+#particles-js{	
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	color: #fff;
+	height: 100vh;
+	width: 100%;
+	min-height: 500px;
+	background: rgb(10,15,29);
+}
+
+section{
+	padding: 100px 0;
+}
+
+.home .max-width{
+	position: absolute;
+	pointer-events: all;
+	margin: auto 0 40px;
+	padding : 200px;
+}
+
+/* Text section home */
+
+.home .home-content .text-1{
+
+	font-size: 16px;
+	pointer-events: all;
+	color: rgb(157, 154, 227)
+}
+
+.home .home-content .text-2{
+
+	font-size: 75px;
+	pointer-events: all;
+	font-weight: bold;
+	margin-left: -3px;
+	color: rgb(192, 192, 192);
+	padding-top: 10px;
+	font-size: clamp(40px, 8vw, 80px);
+	
+}
+
+.home .home-content .text-3{
+	max-width: 600px;
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+.home .home-content .link {
+    color: rgb(157, 154, 227);
+    text-decoration-color: initial;
+}
+

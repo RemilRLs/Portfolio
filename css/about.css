@@ -1,0 +1,50 @@
+/* About section Styling */
+
+.about{
+    position: absolute;
+    background-color: #1b1e1f;
+    padding-top: 1024px;
+    width: 100%;
+    
+}
+
+.about .whoami{
+    /*Proxima_nova_bold*/
+    /* Put a new font family here */
+    
+    position: relative;
+    text-align: center;
+    color : white;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.about .whoami::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111; 
+    transform: translateX(-50%);
+}
+
+.about .whoami::after{
+    content: "About me";
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(157, 154, 227);
+    padding: 5px;
+    background: #1b1e1f; 
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
