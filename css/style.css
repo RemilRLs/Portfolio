@@ -114,6 +114,15 @@ body{
 
 /* Responsive media query start */
 
+
+@media(max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+
+/*
 @media (max-width: 991px){
     .max-width{
         padding: 0 50px;
@@ -150,6 +159,7 @@ body{
     .navbar .menu.active{
         left: 0;
     }
+    
     .navbar .menu li a{
         display: inline-block;
         margin: 20px;
@@ -164,3 +174,4 @@ body{
         color: white;
     }
 }
+*/

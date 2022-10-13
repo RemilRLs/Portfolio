@@ -21,7 +21,9 @@ body{
 
 section{
 	padding: 100px 0;
+
 }
+
 
 .home .max-width{
 	position: absolute;
@@ -62,3 +64,6 @@ section{
     text-decoration-color: initial;
 }
 
+@media(max-width: 705px){
+	
+}
