@@ -7,9 +7,6 @@
     text-decoration: none;
 }
 
-body{
-    --nav-height: 80px;
-}
 
 .max-width{
     max-width: 1920px;

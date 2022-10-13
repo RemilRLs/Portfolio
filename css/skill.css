@@ -1,0 +1,9 @@
+/* Style for the skills */
+
+.skill{
+    display: flex;
+    margin: 0 auto;
+    height: 1920px;
+    width: 100%;
+    background: rgb(17, 220, 71);
+}
