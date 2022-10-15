@@ -1,9 +1,55 @@
 /* Style for the skills */
 
 .skill{
-    display: flex;
-    margin: 0 auto;
-    height: 1920px;
+
+    height: 700px;
     width: 100%;
-    background: rgb(17, 220, 71);
+    background: #353d43;
+}
+
+
+.skill .skill-title{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 70px;
+    color: #FFFFFA;
+    padding: 1rem;
+}
+
+.skill .skill-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.skill .skill-content .skill-language{
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+
+.skill .skill-content .skill-language .skill-img{
+    margin: auto;
+    align-items: center;
+    width: 100px;
+    display : flex;
+    
+    
+}
+
+
+.skill .skill-content .skill-language .language{
+    text-align: center;
+    color: #FFFFFA;
+    margin: 15px;
+}
+
+
+.skill .skill-content .skill-language .skill-img .icon-skill-img{
+
+    height: 90px;
+    width: 90px;
 }
