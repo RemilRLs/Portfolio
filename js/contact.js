@@ -13,5 +13,5 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('div.contact-content, div.skill-language');
+const hiddenElements = document.querySelectorAll('div.contact-content, div.skill-language, div.contact-list');
 hiddenElements.forEach((el) => observer.observe(el)); // Observe all hidden elements.
