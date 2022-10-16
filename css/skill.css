@@ -1,10 +1,20 @@
 /* Style for the skills */
 
-.skill{
 
-    height: 700px;
+.skill{
+    
+    height: 730px;
     width: 100%;
     background: #353d43;
+}
+
+.skill .max-width{
+    max-width: 42.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    align-items: center;
+    
 }
 
 
@@ -25,9 +35,14 @@
     flex-flow: wrap;
 }
 
-.skill .skill-content .skill-language{
+.skill-language{
     padding: 1rem;
     cursor: pointer;
+    text-align: center;
+    align-items: center;
+    width: 140px;
+    opacity: 0;
+    transition: all 2s;
     
 }
 
@@ -45,11 +60,53 @@
     text-align: center;
     color: #FFFFFA;
     margin: 15px;
+    width: 110px;
+}
+
+
+.skill .skill-content .skill-language .skill-txt{
+    color: #bfbfba;
 }
 
 
 .skill .skill-content .skill-language .skill-img .icon-skill-img{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    width: 8.875rem;
+    height: 8.875rem;
+}
 
-    height: 90px;
-    width: 90px;
+@media(max-width: 1176px){
+    .skill{
+
+        height: 850px;
+        width: 100%;
+        background: #353d43;
+    }
+
+    .skill .skill-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+}
+
+@media(max-width: 963px){
+
+    .skill{
+
+        height: 1670px;
+        width: 100%;
+        background: #353d43;
+    }
+
+    .skill .skill-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
 }

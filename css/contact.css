@@ -1,0 +1,36 @@
+.contact{
+    width: 100%;
+    height: 500px;
+    background: rgb(9, 19, 49);
+}
+
+
+
+
+
+.contact .contact-title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 70px;
+    color: #FFFFFA;
+    padding: 1rem;
+
+}
+
+.contact-content{
+    opacity: 0;
+    transition: all 1s;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    color: green;
+}
+
+.show{
+    
+    opacity: 1;
+}

@@ -6,11 +6,11 @@ window.addEventListener('scroll', () =>{
     const currentScroll = window.pageXOffset;
 
     if(prevScrollPos < window.scrollY){
-        console.log("We are going down");
+        //console.log("We are going down");
         navbar.classList.add("nav--hiden");
     }
     else{
-        console.log("We are going up");
+        //console.log("We are going up");
         navbar.classList.remove("nav--hiden");
     }
 
