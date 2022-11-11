@@ -24,7 +24,7 @@
 <body>
 
     <header class="primary-header flex">
-        <nav class="navbar">
+        <nav data-visible="false" class="navbar">
             <div class="max-width">
                 <div class="logo">
                     <img src="ressources/images/desktop.png">
@@ -32,13 +32,13 @@
                 </div>
                 <!-- Button to show the navbar menu.-->
                 <button class="mobile-nav-toggle" aria-controls="menu-navigation" aria-expanded="false"><span class="sr-only" ></span></button>
-                <ul data-visible="false" class="menu-navigation flex" id="menu-navigation">
+                <ul data-visible="false"  class="menu-navigation flex" id="menu-navigation">
                     
-                    <li class="active"><a class="navbar-element">Home</a> </li>
-                    <li><a class="navbar-element" href="#">About</a> </li>
-                    <li><a class="navbar-element" href="#">Projects</a> </li>
-                    <li><a class="navbar-element" href="#">Skills</a> </li>
-                    <li><a class="navbar-element" href="#">Contact</a> </li>
+                    <li class="active"><a class="navbar-element" href="#home">Home</a> </li>
+                    <li><a class="navbar-element" href="#about">About</a> </li>
+                    <li><a class="navbar-element" href="https://github.com/RemilRLs" target="_blank">Projects</a> </li>
+                    <li><a class="navbar-element" href="#skill">Skills</a> </li>
+                    <li><a class="navbar-element" href="#contact">Contact</a> </li>
                     <li>
                         <a class="button" href="#cv">
                             CV

@@ -20,6 +20,7 @@
     position: fixed; 
     z-index: 9999;
     width: 100%;
+    top: 0;
     background-color:rgba(17, 27, 54, 0.603); /* Transparent */
     box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
     
@@ -38,8 +39,19 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    top: 0;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0.2rem);
+}
+
+.navbar[data-visible="false"]{
+    top: 0px;
+    transition: top 350ms ease-out;
+
+}
+.navbar[data-visible="true"]{
+    top: -130px;
+    transition: top 350ms ease-out;
 }
 
 .navbar .menu-navigation .navbar-element{
@@ -53,7 +65,6 @@
 
 .navbar .menu-navigation a{
     text-decoration: none;
-    pointer-events: none;
     color: rgb(192, 192, 192);
     font-weight: 700;
     margin-inline-end: .75em;
