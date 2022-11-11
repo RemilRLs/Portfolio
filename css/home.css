@@ -8,7 +8,7 @@ body{
 /* Particles that move */
 
 #particles-js{	
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	top: 0;
 	left: 0;
@@ -19,17 +19,13 @@ body{
 	background: rgb(10,15,29);
 }
 
-section{
-	padding: 60px 0;
 
-}
-
+/*
 .home{
 	display: flex;
-	height: 100vh;
-	min-height: 500px;
-}
 
+}
+*/
 .home .max-width{
 	position: absolute;
 	pointer-events: all;

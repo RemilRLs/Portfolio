@@ -17,70 +17,93 @@
 /* Navbar Styling */
 
 .navbar{
-    position: fixed;
+    position: fixed; 
     z-index: 9999;
-    top: 0;
-    left: 0;
-    height: (var(--nav-height));
     width: 100%;
-    padding: 30px 0;
     background-color:rgba(17, 27, 54, 0.603); /* Transparent */
     box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
-    transition: transform 0.2s;
+    
 }
-
 
 .navbar .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 
-/* Logo on the top left */
+/* Item of the navbar styling. */
 
-.navbar .logo img{
-    width: 32px;
-    height: 32px;
-}
-/* Name on the top left */
-
-.navbar .name a{
-    margin-left: 20px;
-    font-size: 18px;
-    color: rgb(241, 240, 240);
-    font-weight: bold;
-}
-
-
-/* Navigation bar position */
-
-.navbar .menu li{
+.navbar .menu-navigation{
     list-style: none;
-    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.2rem);
+}
+
+.navbar .menu-navigation .navbar-element{
+    text-transform: uppercase;
+
+}
+/* We don't want to see the button when we are in full screen. */
+.navbar .mobile-nav-toggle{
+    display: none;
+}
+
+.navbar .menu-navigation a{
+    text-decoration: none;
+    pointer-events: none;
+    color: black;
+    font-weight: 700;
+    margin-inline-end: .75em;
+
 
 }
 
 
-.navbar .menu li a {
-    color: rgb(241, 240, 240);
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 23px; /* 25px between each elements */
-    transition: color 0.3s ease;
+.navbar .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 
-.navbar .menu li a:hover {
-    color: rgb(157, 154, 227);
+.navbar .logo{
+    margin: 2rem;
+
+}
+.navbar .logo img{
+    height: 50px;
+    width: 50px;
 }
 
 
-.navbar .menu li .button{
-    border-radius: 15px;
-    border: 2px solid rgb(106, 81, 153);
-    padding: 10px;
+/* Navigation bar responsive. */
 
-    color: rgb(157, 154, 227);
+@media (max-width: 47em){
+    .navbar .menu-navigation{
+        --gap: 2em;
+
+        position: fixed; /* Because if the user scroll we need that the bar is fixed */
+        inset: 0 0 0 30%; /* Short cut for top, right, bottom, left. */
+        z-index: 1000;
+
+        flex-direction: column;
+        padding: min(30vh, 7rem) 2em;
+    }
+
+    .navbar .mobile-nav-toggle{
+        position: absolute;
+        z-index: 9999;
+        background: url("../ressources/images/ui_sandwich_menu-512.webp");
+        background-size: 38px 38px;
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        top: 2rem;
+        right: 2rem;
+        aspect-ratio: 1;
+    }
 }
 
 /* Scroll Stuff */
@@ -94,29 +117,10 @@
 }
 */
 
-.nav--hiden {
-    transform: translateY(calc(-1 * var(--nav-height)));
-    box-shadow: none;
-}
-
-
-/* Menu Buton Styling */
-
-.menu-btn{
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
 
 /* Responsive media query start */
 
 
-@media(max-width: 1300px){
-    .home .max-width{
-        margin-left: 0px;
-    }
-}
 
 
 /*

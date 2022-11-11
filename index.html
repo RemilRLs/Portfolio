@@ -23,33 +23,28 @@
 
 <body>
 
-    <header>
+    <header class="primary-header flex">
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo">
                     <img src="ressources/images/desktop.png">
                     
                 </div>
-                <div class="name"> 
-                    <a href="#">Waël</a>
-                </div>
-
-                <ul class="menu">
+                <!-- Button to show the navbar menu.-->
+                <button class="mobile-nav-toggle" aria-controls="menu-navigation" aria-expanded="false"><span class="sr-only" ></span></button>
+                <ul class="menu-navigation flex" id="menu-navigation">
                     
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">About</a> </li>
-                    <li><a href="#">Projects</a> </li>
-                    <li><a href="#">Skills</a> </li>
-                    <li><a href="#">Contact</a> </li>
+                    <li class="active"><a class="navbar-element">Home</a> </li>
+                    <li><a class="navbar-element" href="#">About</a> </li>
+                    <li><a class="navbar-element" href="#">Projects</a> </li>
+                    <li><a class="navbar-element" href="#">Skills</a> </li>
+                    <li><a class="navbar-element" href="#">Contact</a> </li>
                     <li>
                         <a class="button" href="#cv">
                             CV
                         </a>
                     
                 </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
             </div>
             
         </nav>
@@ -178,7 +173,7 @@
                     <h2 class="title-footer1">Waël EL SINGABY&nbsp<h2> <p class="title-footer2">Portfolio</p>
                 </div>
                 <div class="footer-text">
-                    
+                    <p class="footer-text1">This site was made by Waël EL SINGABY using only HTML/CSS and JavaScript. <br> I hope that you have found all the necessary informations about me.</p>
                 </div>
             </div>
         </div>
