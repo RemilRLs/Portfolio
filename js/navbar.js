@@ -1,18 +1,15 @@
-const navbar = document.querySelector(".navbar")
+const primaryNav = document.querySelector('.menu-navigation');
+const navToggle = document.querySelector('.mobile-nav-toggle');
 
-let prevScrollPos = window.scrollY;
+navToggle.addEventListener('click', () => { // We listen if there is a click on the button.
+    const visibility = primaryNav.getAttribute('data-visible'); // We listen the attribute of the menu-navigation.
 
-window.addEventListener('scroll', () =>{
-    const currentScroll = window.pageXOffset;
-
-    if(prevScrollPos < window.scrollY){
-        //console.log("We are going down");
-        navbar.classList.add("nav--hiden");
-    }
+    if(visibility === "false"){
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true);
+    }   
     else{
-        //console.log("We are going up");
-        navbar.classList.remove("nav--hiden");
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
     }
-
-    prevScrollPos = window.scrollY;
-})
+}); 
