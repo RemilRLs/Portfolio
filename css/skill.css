@@ -21,6 +21,9 @@
     background: #ffffff;
     height: 550px;
     border-radius: 25px;
+    -moz-box-shadow: 0 0 17px #ccc;
+    -webkit-box-shadow: 0 0 17px #ccc;
+    box-shadow: 0 0 15px rgb(161, 158, 158);
 }
 
 .skill .skill-square .button-square{
@@ -50,6 +53,7 @@
 }
 .skill .skill-square .center-skill{
     display: flex;
+    cursor: pointer;
     width: 100%;
     flex-direction: row;
     align-items: center;
