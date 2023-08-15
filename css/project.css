@@ -1,0 +1,100 @@
+.project{
+    height: 730px;
+    width: 100%;
+    background: #1493e8;
+    
+    padding: 20px;
+}
+
+.project .project-content .title-project{
+    color: white;
+}
+
+.project .project-content{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project-content .project-left{
+    margin-top: 100px;
+    
+}
+
+.project .project-content .project-left .project-name{
+    margin-bottom: 20px;
+}
+
+.project .project-content .project-left .project-name h2{
+    color: white;
+}
+
+.project .project-content .project-left .project-description{
+    display: flex;
+
+    align-items: center;
+
+}
+.project .project-content .project-left .project-description p{
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 25px 25px 25px 25px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+
+.project .project-content .project-left .project-description .project-image{
+    position: relative;
+    width: 450px;
+    height: 350px;
+
+    right: 40px;
+
+    border-radius: 15px;
+}
+
+.project-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.project .project-content .project-left .project-description .github {
+    position: relative; 
+    display: inline-block;
+
+    width: 100%;
+}
+
+.project .project-content .project-left .project-description .github .tooltip{
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+
+    background-color: rgb(255, 255, 255);
+
+    transition: opacity 0.9s; 
+
+    font-weight: bold;
+    border-radius: 15px;
+
+    padding: 10px;
+    text-decoration: none;
+    color:#000000;
+}
+
+.project .project-content .project-left .project-description .github:hover  .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project .project-content .project-left .project-description .links img{
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+}
