@@ -7,4 +7,13 @@
 <br/>
  Portfolio-like website featuring some of my projects.
 
+<p align="center">
+	<img src="./resources/readme/thumbnail.PNG" width="700">
+</p>
+ <br/>
+
+# How to access ?
+
+You can find the website at the address : **[remilwael.com](https://remilrls.github.io/Portfolio/)**.
+
  <br/>
