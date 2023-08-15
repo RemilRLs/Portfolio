@@ -6,7 +6,7 @@
 
 <br/>
  Portfolio-like website featuring some of my projects.
-
+ <br/>
 <p align="center">
 	<img src="./ressources/readme/thumbnail.PNG" width="700">
 </p>
