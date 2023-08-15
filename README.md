@@ -8,7 +8,7 @@
  Portfolio-like website featuring some of my projects.
 
 <p align="center">
-	<img src="./resources/readme/thumbnail.PNG" width="700">
+	<img src="./ressources/readme/thumbnail.PNG" width="700">
 </p>
  <br/>
 
