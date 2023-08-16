@@ -46,7 +46,7 @@
 
 .navbar[data-visible="false"]{
     top: 0px;
-    transition: top 350ms ease-out;
+    transition: top 350ms ease-out; 
 
 }
 .navbar[data-visible="true"]{
@@ -55,8 +55,12 @@
 }
 
 .navbar .menu-navigation .navbar-element{
-    text-transform: uppercase;
+    
 
+}
+
+.navbar .menu-navigation .navbar-element:hover{
+    color: rgb(0, 200, 255);
 }
 /* We don't want to see the button when we are in full screen. */
 .navbar .mobile-nav-toggle{
@@ -86,6 +90,18 @@
     height: 50px;
     width: 50px;
 }
+
+.cv{
+    color: rgb(0, 200, 255);
+    padding: 10px;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: rgb(0, 200, 255);
+
+    border-radius: 40px;
+}
+
 
 
 /* Navigation bar responsive. */

@@ -67,6 +67,9 @@
 
 .skill .skill-square .list-skills1[data-visible="true"]{
     display: flex;
+    transform: translateX(0);
+    
+    
 }
 
 .skill .skill-square .list-skills2[data-visible="false"]{
@@ -75,6 +78,7 @@
 
 .skill .skill-square .list-skills2[data-visible="true"]{
     display: flex;
+    transform: translateX(0);
 }
 
 .skill .skill-square .list-skills3[data-visible="false"]{
@@ -83,6 +87,7 @@
 
 .skill .skill-square .list-skills3[data-visible="true"]{
     display: flex;
+    transform: translateX(0);
 }
 
 
@@ -91,6 +96,13 @@
     padding: 20px;
     width: 8.875rem;
     height: 8.875rem;
+    transition: 0.3s ease;
+
+    transform-origin: center;
+}
+.skill .skill-square .center-skill img:hover{
+
+    transform: scale(1.1);
 }
 
 .skill .skill-title{

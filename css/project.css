@@ -1,5 +1,4 @@
 .project{
-    height: 730px;
     width: 100%;
     background: #1493e8;
     
@@ -8,6 +7,7 @@
 
 .project .project-content .title-project{
     color: white;
+    font-size: 30px;
 }
 
 .project .project-content{
